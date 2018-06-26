@@ -14,7 +14,7 @@ class Post extends Component {
   render() {
     return (
       <View>
-        {/* <PhotoUpload
+        <PhotoUpload
           onPhotoSelect={avatar => {
             if (avatar) {
               console.log('Image base64 string: ', avatar)
@@ -33,7 +33,7 @@ class Post extends Component {
               uri: 'https://www.sparklabs.com/forum/styles/comboot/theme/images/default_avatar.jpg'
             }}
           />
-        </PhotoUpload> */}
+        </PhotoUpload>
       </View>
     );
   }
