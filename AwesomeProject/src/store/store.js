@@ -13,7 +13,7 @@ class IgClone {
     return new Promise ((resolve, reject) => {
       console.log(email, password);
       
-      axios.post('http://localhost:3000/users/login', {
+      axios.post('http://35.240.143.97/users/login', {
         email: email,
         password: password
       })
@@ -32,7 +32,7 @@ class IgClone {
 
   reg = (name, email, password) => {
     return new Promise ((resolve, reject) => {
-      axios.post('http://localhost:3000/users/register', {
+      axios.post('http://35.240.143.97/users/register', {
         name: name,
         email: email,
         password: password
