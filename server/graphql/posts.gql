@@ -1,0 +1,32 @@
+type Query {
+  posts: [post]
+  post(_id: String): post
+  selectedPosts(userid: String): [selectedPosts]
+}
+
+type post {
+  _id: String
+  caption: String
+  image: String
+  comments: [comment]
+  user: [user]
+}
+
+type selectedPosts {
+    _id: String
+  caption: String
+  image: String
+  comments: [comment]
+  user: String
+}
+
+type comment {
+  _id: String
+  komentar: String
+  user: [user]
+}
+
+type user {
+  _id: String
+  name: String
+}
